@@ -53,7 +53,7 @@ The objective was to simulate real-world attacker behavior, investigate security
 
 The complete assessment report is available below:
 
-👉 **[Download Full Security Report](./Fintech_Security_Assessment_Pentest_SOC_ThreatIntel.pdf)**
+👉 **[Download Full Security Report](Fintech_Security_Assessment_Pentest_SOC_ThreatIntel.docx)**
 
 ---
 
