@@ -1,83 +1,52 @@
-# 🛡️ Reyts Fintech Security Assessment  
-**Pentesting | SOC Investigation | Threat Intelligence**
+# Reyts Fintech Security Assessment
 
----
+**Fintech security simulation | Splunk investigation | Threat analysis**
 
-## 📌 Overview  
-This project presents a full-scale cybersecurity assessment of a simulated fintech environment.
+## Overview
 
-The assessment covers:
-- Enterprise penetration testing  
-- SOC monitoring and incident response  
-- KYC fraud and threat intelligence analysis  
+This repository documents work completed during the Amdari Cybersecurity Hackathon 2026, powered by Reyts Fintech.
 
-The objective was to simulate real-world attacker behavior, investigate security incidents, and provide actionable security recommendations.
+The project combined security testing scenarios with investigation of authentication and transaction activity in a controlled fintech simulation. The work was presented as part of a team hackathon submission.
 
----
+## Investigation Work
 
-## 🎯 What This Project Demonstrates  
+The log-analysis work involved:
 
-- Real-world security analysis using large log datasets  
-- Detection of multi-stage attack chains  
-- Understanding of identity-based attacks  
-- Hands-on SOC investigation workflow  
-- Ability to connect penetration testing, SOC, and threat intelligence  
+- Approximately **17,169 authentication events**
+- Approximately **7,768 transaction records**
+- Splunk investigation using the `reyts_auth` and `reyts_txs` data sources
+- Correlation of suspicious activity and reconstruction of event timelines
+- Review of account-takeover, phishing, and ransomware-related scenarios within the simulation
 
----
+The hackathon also included a KYC-bypass scenario involving deepfake-based techniques. This should be understood as a simulated attack scenario, not a claim of compromise of a live financial institution.
 
-## 🔍 Key Highlights  
+## What the Project Demonstrates
 
-- Analysed **17,000+ authentication logs** and **7,700+ transaction records**  
-- Identified **three overlapping attack scenarios**:
-  - Account takeover (MidnightSwap)  
-  - Phishing campaign  
-  - Ransomware activity  
+- Working with sizeable authentication and transaction datasets
+- Searching and correlating events in Splunk
+- Investigating identity-related attack scenarios
+- Building an evidence-led incident narrative
+- Communicating security observations and recommendations
 
-- Investigated **KYC bypass using deepfake-based techniques**  
-- Simulated **phishing attack leading to internal access**  
-- Reconstructed attacker timelines and behaviour  
+## Tools and Frameworks
 
----
+- **Splunk:** log search, filtering, and event correlation
+- **Python:** supporting data analysis
+- **MITRE ATT&CK:** structuring adversary behaviour and investigation notes
+- **OSINT techniques:** supporting threat research where applicable
 
-## 🧠 Core Insight  
+## Report
 
-> The biggest weakness across the system was identity trust.
+The detailed report is available in this repository:
 
-- Stolen identities enabled account takeover  
-- Weak monitoring allowed abuse  
-- Fake identities bypassed onboarding  
+[Fintech Security Assessment Report](Fintech_Security_Assessment_Pentest_SOC_ThreatIntel.docx)
 
----
+## Project Context and Limitations
 
-## 📄 Full Report  
+This work was completed in a controlled hackathon environment using supplied simulation data and scenarios. It is not an independent audit of Reyts production infrastructure, and the scenarios should not be interpreted as confirmed real-world incidents.
 
-The complete assessment report is available below:
+## Author
 
-👉 **[Download Full Security Report](Fintech_Security_Assessment_Pentest_SOC_ThreatIntel.docx)**
-
----
-
-## 🛠️ Tools & Techniques  
-
-- Splunk (SIEM analysis)  
-- Python (data analysis)  
-- MITRE ATT&CK framework  
-- OSINT and reconnaissance techniques  
-- Log correlation and anomaly detection  
-
----
-
-## 🚀 Skills Demonstrated  
-
-- Security analysis  
-- Incident investigation  
-- Threat detection  
-- Risk assessment  
-- Technical reporting  
-
----
-
-## ⚠️ Disclaimer  
-
-This project is based on a controlled hackathon simulation environment.  
-All data and scenarios are used strictly for educational purposes.
+[GitHub – JK-xpinn](https://github.com/JK-xpinn)  
+[LinkedIn](https://www.linkedin.com/in/joseph-adekunle-87600b295)  
+[Medium](https://medium.com/@spinnnate7)
